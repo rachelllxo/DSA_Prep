@@ -7,9 +7,9 @@ int main() {
     int choice, value;
 
     while (true) {
-        cout << "\n--- Stack Menu ---" << endl;
-        cout << "1. Push" << endl;
-        cout << "2. Pop" << endl;
+        cout << "\n--- Queue Menu ---" << endl;
+        cout << "1. Enqueue" << endl;
+        cout << "2. Dequeue" << endl;
         cout << "3. Display" << endl;
         cout << "4. Exit" << endl;
         cout << "Enter your choice: ";
@@ -18,7 +18,7 @@ int main() {
         if (choice == 1) {  // Push
             cout << "Enter a value to push: ";
             cin >> value;
-            insertAtBeginning(value);
+            insertAtEnd(value);
             displayList();
         } 
         else if (choice == 2) {  // Pop
